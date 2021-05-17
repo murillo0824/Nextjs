@@ -1,6 +1,14 @@
 
 $cRed:#ff0000;
 $cBlue:#0000ff;
+$cWhite:#ffffff;
+
+%box-atag {
+  
+  width: 100%;
+  height: 100%;
+  
+}
 
 .container {
   min-height: 100vh;
@@ -15,6 +23,32 @@ $cBlue:#0000ff;
   width: 100%;
   font-size: 200%;
   color: $cBlue;
+}
+.golbalNav{
+  background-color: #707070;
+  color: $cWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  
+  
+  padding: 5px;
+  & div{
+    margin-right:5px;
+    position: relative;
+    & a{
+      @extend %box-atag;
+      padding: 5px;
+      border-radius: 2px;
+      transition: .5s;
+      &:hover{
+        background-color: #ff0000;
+        
+      }
+    }
+  }
+
 }
 
 .main {
