@@ -12,20 +12,27 @@ export default function Layout({ children, title = "Hp by nextjs" }) {
         <nav className={styles.golbalNav}>
           <div>
             <Link href="/">
-              <a>test</a>
+              <a>Home</a>
             </Link>
           </div>
           <div>
             <Link href="/blog-page">
-              <a>test</a>
+              <a>blog</a>
             </Link>
-            test
           </div>
-          <div>test</div>
-          <div>test</div>
+          <div>
+            <Link href="/contact-page">
+              <a>contact</a>
+            </Link>
+          </div>
         </nav>
       </header>
-      <main>{children}</main>
+      <main>
+        <div className={styles.flexWrapper}>
+          <div className={styles.flexWrapper__left}></div>
+          <div className={styles.flexWrapper__right}>{children}</div>
+        </div>
+      </main>
       <footer></footer>
     </div>
   );

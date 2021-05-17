@@ -1,7 +1,11 @@
-const Blog = ()=>{
-    return(
-        <div>Blog page</div>
-    )
-}
+import Layout from "../components/Layout";
 
-export default Blog
+const Blog = () => {
+  return (
+    <Layout title="blog">
+      <div>Blog page</div>
+    </Layout>
+  );
+};
+
+export default Blog;
